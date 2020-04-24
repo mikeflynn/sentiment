@@ -50,7 +50,7 @@ func main() {
 		}
 	case "build":
 		sentiment.Train()
-		fmt.Println("Please run > go-bindata /tmp/.sentiment/model.json")
+		fmt.Println("Please run > go-bindata -prefix \"/tmp/.sentiment/\" -pkg sentiment /tmp/.sentiment/model.json")
 	default:
 		fmt.Println("You must select a mode: positive, negative, or build.")
 		os.Exit(1)
